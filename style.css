@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading p{
+    color: rgb(0, 11, 128);
+    font-size: 30px;
+    font-weight: bolder;
+    display: block;
+    text-align: center;
+}
+.container{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.box{
+    width: 25%;
+    margin: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.name, .description{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: bold;
+}
+@media (max-width: 800px) and (min-width: 500px){
+    .box{
+        width: 50%;
+    }
+}
+@media (max-width: 499px){
+    .box{
+        width: 100%;
+    }
+}
